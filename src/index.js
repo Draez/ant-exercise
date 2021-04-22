@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { setConfig } from '@namia/typography';
+import typographyConfig from './typograghy-config.json';
+
+setConfig(typographyConfig);
 
 ReactDOM.render(
   <React.StrictMode>
