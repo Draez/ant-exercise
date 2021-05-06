@@ -13,7 +13,7 @@ const List = () => {
         <>
             <Space direction="horizontal" size={small}>
                 <div className="wrap-line">
-                    <Typography type="regular" elementType="h3" size="2">
+                    <Typography type="headline" elementType="h3" size="2" weight="600">
                         Kicker column 01a
                     </Typography>
                     <Typography type="regular" elementType="p" size="1">
