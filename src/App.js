@@ -12,6 +12,8 @@ import Nav from './components/Nav/Nav';
 
 function App() {
 
+  const showWarning = Math.floor(Math.random() * 2); 
+
   return (
     <div className="ant-design-wrapper">
 
@@ -37,7 +39,7 @@ function App() {
         </Col>
         
         <Col md={10} sm={22} xs={22}>
-          <LargeKicker />
+          <LargeKicker showWarning={showWarning} />
         </Col>
 
         <Col xs={24} md={1} style={{ textAlign:"center" }}>
@@ -55,7 +57,7 @@ function App() {
             <Space size="large" direction="vertical">
               <Row gutter={[{ xs: 8, sm: 16, md: 32, lg: 48 }]}>
                 <Col xs={12} md={6}>
-                  <KickerColumn title="Kicker 02a" text="Paragraph text" />
+                  <KickerColumn title="Kicker 02a" text="Paragraph text" loading />
                 </Col>
                 <Col xs={12} md={6}>
                   <KickerColumn title="Kicker 02b" text="Paragraph text" />
